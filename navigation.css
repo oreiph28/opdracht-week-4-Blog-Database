@@ -31,14 +31,14 @@
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: #FF3010;
+    background-color: #FF590B;
 }
 
 .subnav-content {
     display: none;
     position: absolute;
     left: 0;
-    background-color: #FF3010;
+    background-color: #EADBFF;
     width: 100%;
     z-index: 1;
 }

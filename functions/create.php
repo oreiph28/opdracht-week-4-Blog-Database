@@ -25,7 +25,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                             echo "Connection failed " . $conn->connect_error;              
                            }
  
- 
+ $sqlCommand="USE login";
  
 //=========================sending to database=========================
 $sqlCommand = "INSERT INTO blog (name, title, blog,email,file)
