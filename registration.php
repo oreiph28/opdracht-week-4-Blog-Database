@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="registration.css">
-
+<link rel="stylesheet" href="navigation.css"> 
 <style>
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -70,7 +70,39 @@ a {
 </style>
 </head>
 <body>
+<div id="header"></div>
 
+<!-- ====================NAVIGATION BAR -->
+<div class="navbar">
+   <a href="index.php">Home</a>
+  <div class="subnav">
+  <a href="about.php">About</a>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Topics <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+    <a href="index_news.php">NEWS</a>
+	 <a href="index_sport.php">SPORT</a>
+	 <a href="index_culture.php">CULTURE</a>
+	 <a href="index_politics.php">POLITICS</a>
+	 <a href="index.php">MOST POPULAR TOPICS</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Login <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+       <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id02').style.display='block'">Admin_Login</a>
+       <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id01').style.display='block'">User_Login</a>
+    </div>
+  </div>
+   <a href="contact_form.php">Contact</a>
+</div>
+
+
+<br />
+<br />
+
+<!--  ==========================registration form ============= -->
 <form action="functions/register_page.php" method="post">
   <div class="container">
     <h1>Register</h1>

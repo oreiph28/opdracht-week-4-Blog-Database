@@ -40,7 +40,7 @@
        <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id01').style.display='block'">User_Login</a>
     </div>
   </div>
-  <a href="contact.php">Contact</a>
+   <a href="contact_form.php">Contact</a>
     <a href="registration.php">Register</a>
 </div>
 

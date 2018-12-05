@@ -54,7 +54,7 @@
      
     </div>
   </div>
-  <a href="contact.php">Contact</a>
+   <a href="contact_form.php">Contact</a>
     <a href="registration.php">Register</a>
 </div>
 
