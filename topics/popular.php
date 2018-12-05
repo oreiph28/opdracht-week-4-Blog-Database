@@ -13,7 +13,7 @@
   </head>
   
 <body>
-  
+  politics
  <div id="header" align="center"></div>
 <!-- ====================NAVIGATION BAR -->
 <div class="navbar">
@@ -53,7 +53,7 @@
 
   <form class="blog" name="Blogform" method="post"> 
 
-<h1 id="text">DATABASE</h1>
+<h1 id="text">Popular</h1>
 	
    <table id="data" align="center" border="4px" style="width:600px; line-height=30px;"  method="post" >
             <colgroup>
@@ -74,10 +74,10 @@
             <tbody>
 		
         <?php
-		
+	
 $username = "oreiph";
 $password = "1771128903";
-$dbname = "oreiph_blog";
+$dbname = "myblog";
 $servername = "localhost";
 $date = date("Y-m-d H:i:s");
 
@@ -94,11 +94,11 @@ $blog = mysqli_real_escape_string($conn, $_POST['image_text']);
  
           
 
-$sqlCommand1= "use oreiph_blog";
+$sqlCommand1= "use myblog";
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand1);
 
 //=========================sending to database=========================
-$sqlCommand = "INSERT INTO blog (name, title, blog,email,file)
+$sqlCommand = "INSERT INTO popular (name, title, blog,email,file)
 VALUES ('$name', '$title', '$blog', '$email','$file')";
 //$sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
@@ -120,7 +120,7 @@ echo "Error: " . $sqlUitvoer . "<br>" . $conn->error;
 echo "<br>";		
 			
 // =========================retreiving from database==================== 		
-$sqlCommand ="SELECT * FROM blog ORDER BY ID DESC LIMIT 15";
+$sqlCommand ="SELECT * FROM politics ORDER BY ID DESC LIMIT 15";
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
           
 			while ($row = $sqlUitvoer -> fetch_assoc())
@@ -134,21 +134,6 @@ $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
                     <td><?php echo $row['email']?></td>
 					<td><?php echo $row['blog']?></td>                  
                 </tr>
-				
-				<?php
-    while ($row = mysqli_fetch_array($sqlUitvoer)) {
-      echo "<div id='img_div'>";
-      	echo "<img src='images/".$row['file']."' >";
-		echo "<p>".$row['name']."</p>";
-		echo "<p>".$row['title']."</p>";
-		echo "<p>".$row['email']."</p>";
-      	echo "<p>".$row['blog']."</p>";
-      echo "</div>";
-    }
-  ?>
-				
-				
-				
             <?php
            }
             ?>
@@ -158,14 +143,11 @@ $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
    <?php
 $conn->close();
 ?>
-
-
 <script>
 
     location.replace("../index_blog.php")
 
 </script>
-
  </form>
    
 

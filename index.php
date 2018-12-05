@@ -125,8 +125,8 @@
 $servername = "localhost";
 $username = "oreiph";
 $password = "1771128903";
-//$dbname = "myblog";
-$dbname = "oreiph_blog";
+$dbname = "myblog";
+
 $conn = mysqli_connect($servername, $username, $password, $dbname);
    if($conn->connect_errno){
                             echo "Connection failed " . $conn->connect_error; 
@@ -134,7 +134,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                            }
 
 //$sqlCommand ="SELECT * FROM news ORDER BY ID DESC LIMIT 4";
-  $sqlCommand ="SELECT * FROM blog ORDER BY ID DESC LIMIT 4";
+  $sqlCommand ="SELECT * FROM popular ORDER BY ID DESC LIMIT 4";
 
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
