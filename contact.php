@@ -126,7 +126,7 @@ a {
 	<textarea name="form" cols="80" rows="20" placeholder="Enter Text" required></textarea>
     <hr>
 
-    <button type="submit"  class="registerbtn">Register</button>
+    <button type="submit"  class="registerbtn">Send</button>
   </div>
 
   </div>

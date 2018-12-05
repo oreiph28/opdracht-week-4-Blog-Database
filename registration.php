@@ -69,6 +69,8 @@ a {
 }
 </style>
 </head>
+
+
 <body>
 <div id="header"></div>
 
@@ -109,16 +111,16 @@ a {
     <p>Please fill in this form to create an account.</p>
     <hr>
 
-	 <label for="username"><b>Username</b></label>
+	 <label ><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="username" required>
 
-    <label for="email"><b>Email</b></label>
+    <label ><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
 
-    <label for="psw"><b>Password</b></label>
+    <label ><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <label ><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
     <hr>
     <p>By creating an account you agree to our <a href="terms.php">Terms & Privacy</a>.</p>
@@ -144,10 +146,10 @@ a {
 	  </div>
 	  
 	  <div class="container">
-	       <label for="uname"><b>Username</b></label>
+	       <label ><b>Username</b></label>
 		   <input type="text" placeholder="Enter Username" name="uname" required>
 		   
-		   <label for="psw"><b>Password</b></label>
+		   <label ><b>Password</b></label>
 	       <input type="password" placeholder="Enter Password" name="psw" required>
 		   
 		   <button class="button_login" type="submit">Login</button>

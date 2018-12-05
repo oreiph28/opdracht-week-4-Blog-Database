@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
 	      <link rel="stylesheet" href="navigation.css"> 
 	        <link rel="stylesheet" href="contact2.css">
-    <title></title>
+    <title>contact</title>
     
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -89,7 +89,7 @@
 	       <label ><b>Username</b></label>
 		   <input type="text" placeholder="Enter Username" name="uname" required>
 		   
-		   <label <b>Password</b></label>
+		   <label> <b>Password</b></label>
 	       <input type="password" placeholder="Enter Password" name="psw" required>
 		   
 		   <button class="button_login" type="submit">Login</button>
@@ -117,7 +117,7 @@
 <!--   =============registration form=========================
 ==============================================================
 ========================================================== -->
-<form action="functions/register_page.php" method="post">
+<form action="mail.php" method="post">
   <div class="container">
     <h1>Contact</h1>
 
@@ -125,15 +125,21 @@
 
 	 <label><b>Username</b></label>
     <input id="contact_name" type="text" placeholder="Enter Username" name="username" required>
-
-    <label><b>Email</b></label>
+<br />
+    <label><b>Email</b></label><br />
     <input id="contact_email" type="text" placeholder="Enter Email" name="email" required>
 
+	<br />
+    <label><b>Subject</b></label><br />
+    <input id="contact_subject" type="text" placeholder="Enter Subject" name="subject" required>
+
+
+<br />
 	<label><b>Text</b></label>
 	<textarea name="form" cols="80" rows="10" placeholder="Enter Text" required></textarea>
     <hr>
 
-    <button type="submit"  class="registerbtn">Register</button>
+    <button type="submit"  class="registerbtn">Send</button>
   </div>
 
 
@@ -141,6 +147,6 @@
 
 
 <br />
-<div id="header" align="center"></div>
+<div id="header"></div>
   </body>
 </html>
