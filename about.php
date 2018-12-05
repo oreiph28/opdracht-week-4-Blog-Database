@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <title>BLOG</title>
-        <link rel="stylesheet" href="qw.css">
+        <link rel="stylesheet" href="about.css">
         <link rel="stylesheet" href="navigation.css"> 
 			  
     </head>
@@ -21,16 +21,16 @@
 <div class="navbar">
  
   <div class="subnav">
-    <a href="about.php">About</a>
+     <a href="index.php">Home</a>
   </div> 
   <div class="subnav">
     <button class="subnavbtn">Topics <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-  <a href="index_news.php">NEWS</a>
+    <a href="index_news.php">NEWS</a>
 	 <a href="index_sport.php">SPORT</a>
 	 <a href="index_culture.php">CULTURE</a>
 	 <a href="index_politics.php">POLITICS</a>
-	 <a href="index.php">BLOGS OF THE DAY</a>
+	 <a href="index.php">MOST POPULAR TOPICS</a>
     </div>
   </div> 
   <div class="subnav">
@@ -47,7 +47,30 @@
   
 
 <!-- =======================User Login============================== -->
-<h1 id="text3">POLITICS</h1>
+<h1 id="text3">ABOUT</h1>
+
+<br />
+<br />
+<br />
+
+<div id="div1">
+<h1 id="h1">The Blog</h1>
+<p id="text1">Deze blog is gemaakt door Ornelio reiph.<br />
+   Je bent vrij om blogs toe te voegen.<br />
+   Maak een account aan via de 'register-menu' om blogs toe te voegen.<br />
+   Er is de mogelijkheid om plaatjes of andere 'file's bij je blog toe tevoegen.<br />
+   Ook is er een 'users-menu' toegevoegd om de tekts-opmaak te veranderen.<br />
+   <br />
+   U kunt via de 'contact-menu' contact opnemen met de 'blog-administrator'.<br /><br />
+   
+   Met vriendelijke groet,<br />
+   Ornelio Reiph<br />
+   Blog administrator.<br />
+
+   </p>
+   <img id="img1" src="../../images/nelio1.png" width="192" height="192" alt="" title="blog administartor" />
+</div>
+
 
 <form id="id01"  class="login"  action="user_login.php" method="post">
       <div class="imgcontainer">
@@ -108,49 +131,11 @@
 </form>
 
 
+  
+
  
   
-  <!-- ===========================================================================================
-  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  ============================================================================================= -->
-  
-  
- 
- 
-   <?php
-$servername = "localhost";
-$username = "oreiph";
-$password = "1771128903";
-//$dbname = "myblog";
-$dbname = "myblog";
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-   if($conn->connect_errno){
-                            echo "Connection failed " . $conn->connect_error; 
-                            exit();
-                           }
 
-
-  $sqlCommand ="SELECT * FROM politics ORDER BY ID DESC LIMIT 4";
-
-$sqlUitvoer	= mysqli_query($conn,$sqlCommand);
-
-if ($sqlUitvoer->num_rows>0){
-
-         while ($row = mysqli_fetch_array($sqlUitvoer)) {
-      
-      	echo "<p id='blog2'>"."<img id='img1' src='images/".$row['file']."' >";
-		echo "<br>"."<br>"."<br>"."<b>"."Name:  "."</b>".$row['name']."<br>";
-		echo "<b>"."Title:  "."</b>".$row['title']."<br>";
-		echo "<b>"."Email:  "."</b>".$row['email']."<br>";
-		echo "_________________________________________________________________"."<br>"."<br>"."<br>";
-      	echo $row['blog']."</p>";
-     
-    }}
-    				   
-
-
-?> 
- 
 
   <br />
   <br />

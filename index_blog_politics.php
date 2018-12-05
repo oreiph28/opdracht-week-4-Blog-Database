@@ -25,12 +25,7 @@
 <div class="navbar">
   <a href="index.php">Home</a>
   <div class="subnav">
-    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="#company">Company</a>
-      <a href="#team">Team</a>
-      <a href="#careers">Careers</a>
-    </div>
+    <a href="about.php">About</a>
   </div> 
   <div class="subnav">
     <button class="subnavbtn">Topics <i class="fa fa-caret-down"></i></button>
