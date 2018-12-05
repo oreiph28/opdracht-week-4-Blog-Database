@@ -74,25 +74,32 @@
             <tbody>
 		
         <?php
-$name = $_POST["name"];
-$title = $_POST["title"];
-$email = $_POST["email"];
-$blog = $_POST["bericht"];
-
-          
+	
 $username = "oreiph";
 $password = "1771128903";
 $dbname = "myblog";
 $servername = "localhost";
 $date = date("Y-m-d H:i:s");
 
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password);		
+		
+$name = $_POST["name"];
+$title = $_POST["title"];
+$email = $_POST["email"];
+//$blog = $_POST["bericht"];
+//$file = $_POST["fileToUpload"];
+$file = $_FILES['image']['name'];
+$blog = mysqli_real_escape_string($conn, $_POST['image_text']);
+
+ 
+          
+
 $sqlCommand1= "use myblog";
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand1);
 
 //=========================sending to database=========================
-$sqlCommand = "INSERT INTO politics (name, title, blog,email)
-VALUES ('$name', '$title', '$blog', '$email')";
+$sqlCommand = "INSERT INTO politics (name, title, blog,email,file)
+VALUES ('$name', '$title', '$blog', '$email','$file')";
 //$sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
 if ($conn->query($sqlCommand) === TRUE) 
@@ -138,7 +145,7 @@ $conn->close();
 ?>
 <script>
 
-    location.replace("../index.php")
+    location.replace("../index_blog_politics.php")
 
 </script>
  </form>

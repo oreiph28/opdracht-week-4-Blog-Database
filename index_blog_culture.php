@@ -35,7 +35,7 @@
   <div class="subnav">
     <button class="subnavbtn">Topics <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-    <a href="index_blog_news.php">NEWS</a>
+     <a href="index_blog_news.php">NEWS</a>
 	 <a href="index_blog_sport.php">SPORT</a>
 	 <a href="index_blog_culture.php">CULTURE</a>
 	 <a href="index_blog_politics.php">POLITICS</a>
@@ -58,7 +58,7 @@
 <!--   =================================================================
 ==================================BLOG TEXT==========================
 ==================================================================== -->
-<h1 id="text3">BLOGS OF THE DAY</h1>
+<h1 id="text3">Culture</h1>
 
 <!--   =================================================================
 =================================LOGIN==================================
@@ -95,7 +95,7 @@
 =============================BLOG INPUT FORM============================
 ==================================================================== -->
 
-    <form class="blog" id="blog_news" name="Blogform" method="post" action="topics/popular.php" enctype="multipart/form-data"> 
+    <form class="blog" id="blog_news" name="Blogform" method="post" action="topics/culture.php" enctype="multipart/form-data"> 
              <table  class="table">
 	               <tr>
 					        <td>
@@ -163,16 +163,16 @@
 $servername = "localhost";
 $username = "oreiph";
 $password = "1771128903";
-//$dbname = "myblog";
-$dbname = "oreiph_blog";
+$dbname = "myblog";
+
 $conn = mysqli_connect($servername, $username, $password, $dbname);
    if($conn->connect_errno){
                             echo "Connection failed " . $conn->connect_error; 
                             exit();
                            }
 
-//$sqlCommand ="SELECT * FROM news ORDER BY ID DESC LIMIT 4";
-  $sqlCommand ="SELECT * FROM blog ORDER BY ID DESC LIMIT 4";
+$sqlCommand ="SELECT * FROM culture ORDER BY ID DESC LIMIT 4";
+
 
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 

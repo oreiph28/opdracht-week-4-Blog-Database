@@ -23,7 +23,7 @@
  function myNews(){
  var result="<?php news();?>";
  document.getElementById("blog").innerHTML = result;
- document.getElementById("text3").innerHTML = "NEWS";
+ document.getElementById("text3").innerHTML = "NEWSqwerty";
 
  //alert(result);
   return false; 
@@ -36,7 +36,6 @@
 <?php
 
 function news() {
-
 $servername = "localhost";
 $username = "oreiph";
 $password = "1771128903";
@@ -49,22 +48,23 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                            }
 
 $sqlCommand ="SELECT * FROM news ORDER BY ID DESC LIMIT 4";
+  //$sqlCommand ="SELECT * FROM blog ORDER BY ID DESC LIMIT 4";
+
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
 if ($sqlUitvoer->num_rows>0){
 
-                             while($row = $sqlUitvoer->fetch_assoc()){
-
-      echo "<b>Naam: </b>". $row['name'] . "<br>";
-      echo "<b>Title: </b>".$row['title'] . "<br>";
-      echo "<b>Email: </b>". $row['email']. "<br>". "<br>";
-      echo "<b>Bericht: </b>". $row['blog']. "<br>";
-      echo "<br>";
-      echo "<br>";
-	 }}
+         while ($row = mysqli_fetch_array($sqlUitvoer)) {
+      
+      	echo "<p id='blog'>"."<img src='images/".$row['file']."' >";
+		echo "<br>".$row['name']."<br>";
+		echo $row['title']."<br>";
+		echo $row['email']."<br>";
+      	echo $row['blog']."</p>";
+     
+    }}
     				   
 echo "connected to server";
-
 }
 
 ?>
@@ -96,7 +96,6 @@ echo "connected to server";
 <?php
 
 function sport() {
-
 $servername = "localhost";
 $username = "oreiph";
 $password = "1771128903";
@@ -109,20 +108,21 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                            }
 
 $sqlCommand ="SELECT * FROM sport ORDER BY ID DESC LIMIT 4";
+  //$sqlCommand ="SELECT * FROM blog ORDER BY ID DESC LIMIT 4";
+
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
 if ($sqlUitvoer->num_rows>0){
 
-                             while($row = $sqlUitvoer->fetch_assoc()){
-
-      echo "<b>Naam: </b>". $row['name'] . "<br>";
-      echo "<b>Title: </b>".$row['title'] . "<br>";
-      echo "<b>Email: </b>". $row['email']. "<br>". "<br>";
-      echo "<b>Bericht: </b>". $row['blog']. "<br>";
-	  
-      echo "<br>";
-      echo "<br>";
-	 }}
+         while ($row = mysqli_fetch_array($sqlUitvoer)) {
+      
+      	echo "<p id='blog'>"."<img src='images/".$row['file']."' >";
+		echo "<br>".$row['name']."<br>";
+		echo $row['title']."<br>";
+		echo $row['email']."<br>";
+      	echo $row['blog']."</p>";
+     
+    }}
     				   
 echo "connected to server";
 
@@ -157,7 +157,6 @@ echo "connected to server";
 <?php
 
 function culture() {
-
 $servername = "localhost";
 $username = "oreiph";
 $password = "1771128903";
@@ -170,20 +169,21 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                            }
 
 $sqlCommand ="SELECT * FROM culture ORDER BY ID DESC LIMIT 4";
+  //$sqlCommand ="SELECT * FROM blog ORDER BY ID DESC LIMIT 4";
+
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
 if ($sqlUitvoer->num_rows>0){
 
-                             while($row = $sqlUitvoer->fetch_assoc()){
-
-      echo "<b>Naam: </b>". $row['name'] . "<br>";
-      echo "<b>Title: </b>".$row['title'] . "<br>";
-      echo "<b>Email: </b>". $row['email']. "<br>". "<br>";
-      echo "<b>Bericht: </b>". $row['blog']. "<br>";
-	
-      echo "<br>";
-      echo "<br>";
-	 }}
+         while ($row = mysqli_fetch_array($sqlUitvoer)) {
+      
+      	echo "<p id='blog'>"."<img src='images/".$row['file']."' >";
+		echo "<br>".$row['name']."<br>";
+		echo $row['title']."<br>";
+		echo $row['email']."<br>";
+      	echo $row['blog']."</p>";
+     
+    }}
     				   
 echo "connected to server";
 
@@ -228,22 +228,23 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                            }
 
 $sqlCommand ="SELECT * FROM politics ORDER BY ID DESC LIMIT 4";
+  //$sqlCommand ="SELECT * FROM blog ORDER BY ID DESC LIMIT 4";
+
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
 if ($sqlUitvoer->num_rows>0){
 
-                             while($row = $sqlUitvoer->fetch_assoc()){
-
-      echo "<b>Naam: </b>". $row['name'] . "<br>";
-      echo "<b>Title: </b>".$row['title'] . "<br>";
-      echo "<b>Email: </b>". $row['email']. "<br>". "<br>";
-      echo "<b>Bericht: </b>". $row['blog']. "<br>";
-      echo "<br>";
-      echo "<br>";
-	 }}
+         while ($row = mysqli_fetch_array($sqlUitvoer)) {
+      
+      	echo "<p id='blog'>"."<img src='images/".$row['file']."' >";
+		echo "<br>".$row['name']."<br>";
+		echo $row['title']."<br>";
+		echo $row['email']."<br>";
+      	echo $row['blog']."</p>";
+     
+    }}
     				   
 echo "connected to server";
-
 }
 
 ?>
