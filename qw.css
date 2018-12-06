@@ -103,7 +103,7 @@ table.table{
          text-align:center;
          position:relative;
          left:515px;
-         top:25px;
+         top:-100px;
          background-color:white;
          width:400px;
          border:6px;
@@ -149,7 +149,7 @@ table.table{
          background-size:cover;
          width:950px;
          left:200px;
-         top:20px;
+         top:-20px;
          border:8px;
          margin:4px;
          padding:30px;

@@ -125,7 +125,7 @@
                      </td>
 					 
                      <td>
-                         <input id="id6" type="text" placeholder="Enter Id" name="id" required><br/>
+                         <input id="id6" type="text" placeholder="Enter Id" name="id" ><br/>
                      </td>
                    </tr>
  
@@ -135,7 +135,7 @@
                          <label for="name"><b>Name:</b></label>
                     </td>
                     <td>
-                         <input id="id7" type="text" placeholder="Enter name" name="name" required><br/>
+                         <input id="id7" type="text" placeholder="Enter name" name="name" ><br/>
                     </td>
                  </tr>
  
@@ -144,7 +144,7 @@
                          <label  for="title"><b>Title:</b></label>
                    </td>             
 				   <td>
-                         <input id="id8" type="text" placeholder="Enter title" name="title" required><br/>
+                         <input id="id8" type="text" placeholder="Enter title" name="title" ><br/>
                    </td>
                 </tr>
 
@@ -153,7 +153,25 @@
                          <label for="email"><b>Email:</b></label>
                    </td>
                    <td>
-                         <input id="id9" type="text" placeholder="Email" name="email" required>
+                         <input id="id9" type="text" placeholder="Email" name="email" >
+                   </td>
+                </tr>
+              
+                <tr>
+                   <td>
+                         <label for="email"><b>Table:</b></label>
+                   </td>
+                   <td>
+                         <input id="id9" type="text" placeholder="Email" name="table" required>
+                   </td>
+                </tr>
+               
+			     <tr>
+                   <td>
+                         <label for="email"><b>Rows:</b></label>
+                   </td>
+                   <td>
+                         <input id="id9" type="text" placeholder="Enter numer table Rows" name="rows" required>
                    </td>
                 </tr>
   
@@ -162,7 +180,7 @@
                          <label for="blog"><b>Bericht:</b></label>
                    </td>
                    <td id="id10">
-                         <textarea name="blog" cols="28" rows="9"  placeholder="Enter Blog" required></textarea>
+                         <textarea name="blog" cols="28" rows="9"  placeholder="Enter Blog" ></textarea>
                    </td>
                 </tr>
            </table>
@@ -431,7 +449,7 @@
             <tr>
                  <th id="col_id">ID</th>
 				 <th id="col_name">Name</th>
-				 <th id="col_title">Title</th>
+				 <th id="col_title">File Title</th>
 				 <th id="col_email">Email</th>
 			     <th id="col_blog">Blog</th>
 				 <th id="col_file">File</th>
@@ -484,10 +502,12 @@ if ($sqlUitvoer->num_rows>0){
          while ($row = mysqli_fetch_array($sqlUitvoer)) {
       
       	
-		echo "<p id='blog2'>".$row['title']."  "."<b>"."File ID#  "."</b>".$row['ID']."<br>";
-		echo "<img id='img1' src='images/".$row['file']."' >";
-		echo "<br>"."</p>";
-      	
+		echo "<p id='blog2'>"."<b>"."File Id: "."</b>".$row['ID']."<br>";
+		echo "<b>"."User Name: "."</b>".$row['name']."<br>";
+		echo "<b>"."User Email: "."</b>".$row['email']."<br>";
+		echo "<b>"."File Name: "."</b>".$row['title']."<br>";
+		echo "<img id='img1' src='images/".$row['file']."' >"."</p>";
+		
      
     }}
     				   

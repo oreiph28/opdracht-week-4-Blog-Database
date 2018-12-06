@@ -10,7 +10,18 @@
         <title>BLOG</title>
         <link rel="stylesheet" href="qw.css">
         <link rel="stylesheet" href="navigation.css"> 
-			  
+		<link id="stylesheet" rel="stylesheet" type="text/css" href="stylesheet1.css"/>
+		<link  rel="stylesheet" type="text/css" href="stylesheets/style_table.css"/>
+		<link id="stylesheet" rel="stylesheet" type="text/css" href="stylesheet1.css"/>
+		<link  rel="stylesheet" type="text/css" href="stylesheets/style_table.css"/>
+		
+		<script>
+               function setStyleSheet(url){
+                                           var stylesheet = document.getElementById("stylesheet");
+                                           stylesheet.setAttribute('href', url);
+                                           }
+        </script>	
+	  	  
     </head>
 
 <body>
@@ -44,7 +55,51 @@
     <a href="registration.php">Register</a>
 </div>
 
+  <!-- ===========================user change font style========================= -->
+
+<table class="button">
+             
+			 <th>Text size</th>
+      <tr>
+         <td>
+             <button onclick="setStyleSheet('stylesheets/stylesheet1.css')" >xx-small Text</button>
+         </td>
+      </tr>
+    
+	  <tr>
+	     <td>
+            <button onclick="setStyleSheet('stylesheets/stylesheet2.css')" >x-small Text</button> 
+         </td>
+      </tr>
+
+      <tr>
+         <td>
+           <button onclick="setStyleSheet('stylesheets/stylesheet3.css')" >small Text</button> 
+         </td>	 
+     </tr>
+
+     <tr> 
+         <td>
+           <button onclick="setStyleSheet('stylesheets/stylesheet4.css')" >larg Text</button> 
+         </td>
+    </tr>
+
+    <tr>
+         <td>
+           <button onclick="setStyleSheet('stylesheets/stylesheet5.css')" >x-larg Text</button> 
+         </td>
+    </tr>
+
+    <tr>
+        <td>
+          <button onclick="setStyleSheet('stylesheets/stylesheet6.css')" >xx-larg Text</button>
+        </td>
+    </tr>
+
+</table>
+
   
+<!-- ==================================DATABASE========================== --> 
 
 <!-- =======================User Login============================== -->
 <h1 id="text3">CULTURE</h1>

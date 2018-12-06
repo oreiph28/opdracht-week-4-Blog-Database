@@ -6,10 +6,18 @@
     <meta name="dcterms.created" content="ma, 03 dec 2018 13:15:26 GMT">
     <meta name="description" content="">
     <meta name="keywords" content="">
-	      <link rel="stylesheet" href="navigation.css"> 
-	        <link rel="stylesheet" href="index_blog2.css">
+	<link rel="stylesheet" href="navigation.css"> 
+	<link rel="stylesheet" href="index_blog2.css">
     <title> index_blog</title>
-    
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="stylesheet1.css"/>
+	<link  rel="stylesheet" type="text/css" href="stylesheets/style_table1.css"/>
+		
+    <script>
+            function setStyleSheet(url){
+                                        var stylesheet = document.getElementById("stylesheet");
+                                        stylesheet.setAttribute('href', url);
+                                       }
+    </script>	
 
   </head>
   <body>
@@ -48,7 +56,48 @@
     <a href="registration.php">Register</a>
 </div>
 
+ <!-- ===========================user change font style========================= -->
 
+<table class="button" >
+             
+			 <th >Text size</th>
+      <tr id="table1">
+         <td id="table1">
+             <button onclick="setStyleSheet('stylesheets/stylesheet1.css')" >xx-small Text</button>
+         </td>
+      </tr>
+    
+	  <tr id="table1">
+         <td id="table1">
+            <button onclick="setStyleSheet('stylesheets/stylesheet2.css')" >x-small Text</button> 
+         </td>
+      </tr>
+
+      <tr id="table1">
+         <td id="table1">
+           <button onclick="setStyleSheet('stylesheets/stylesheet3.css')" >small Text</button> 
+         </td>	 
+     </tr>
+
+     <tr id="table1">
+         <td id="table1">
+           <button onclick="setStyleSheet('stylesheets/stylesheet4.css')" >larg Text</button> 
+         </td>
+    </tr>
+
+    <tr id="table1">
+         <td id="table1">
+           <button onclick="setStyleSheet('stylesheets/stylesheet5.css')" >x-larg Text</button> 
+         </td>
+    </tr>
+
+    <tr id="table1">
+         <td id="table1">
+          <button onclick="setStyleSheet('stylesheets/stylesheet6.css')" >xx-larg Text</button>
+        </td>
+    </tr>
+
+</table>
 
 <!--   =================================================================
 ==================================BLOG TEXT==========================

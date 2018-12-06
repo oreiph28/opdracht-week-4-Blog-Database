@@ -191,7 +191,7 @@ div.adminMenu5{
        top:-1050px;
        left:-40px;
        background-color:black;
-       border-color:#FF8D2E;
+       border-color:gray;
        border-width:8px;
        max-height:200px;
        overflow:scroll;
@@ -230,8 +230,24 @@ div.adminMenu5{
 color:white;
 border-width:4px;
 border-style:solid;
-border-color:#FF8D2E;
+border-color:gray;
 background-color:black;
 position:relative;
 top:-1000px;
+left:-40px;
+width:445%;
+padding:10px;
  }
+    #blog11{
+color:white;
+border-width:4px;
+border-style:solid;
+border-color:gray;
+background-color:black;
+position:relative;
+top:1px;
+left:1px;
+width:445%;
+padding:10px;
+ }
+
