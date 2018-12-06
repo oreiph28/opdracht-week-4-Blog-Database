@@ -49,49 +49,6 @@
  
   
   
- <!-- ===========================user change font style========================= -->
-
-<table class="button">
-             
-			 <th>Text size</th>
-      <tr>
-         <td>
-             <button onclick="setStyleSheet('stylesheets/stylesheet1.css')" >xx-small Text</button>
-         </td>
-      </tr>
-    
-	  <tr>
-	     <td>
-            <button onclick="setStyleSheet('stylesheets/stylesheet2.css')" >x-small Text</button> 
-         </td>
-      </tr>
-
-      <tr>
-         <td>
-           <button onclick="setStyleSheet('stylesheets/stylesheet3.css')" >small Text</button> 
-         </td>	 
-     </tr>
-
-     <tr> 
-         <td>
-           <button onclick="setStyleSheet('stylesheets/stylesheet4.css')" >larg Text</button> 
-         </td>
-    </tr>
-
-    <tr>
-         <td>
-           <button onclick="setStyleSheet('stylesheets/stylesheet5.css')" >x-larg Text</button> 
-         </td>
-    </tr>
-
-    <tr>
-        <td>
-          <button onclick="setStyleSheet('stylesheets/stylesheet6.css')" >xx-larg Text</button>
-        </td>
-    </tr>
-
-</table>
-
   
 <!-- ==================================DATABASE========================== -->
   <form class="blog" name="Blogform" method="post"> 

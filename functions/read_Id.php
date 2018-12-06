@@ -15,7 +15,10 @@ $password = "1771128903";
 $dbname = "myblog";
 $servername = "localhost";
 $date = date("Y-m-d H:i:s");
-
+$id = $_POST["id"];
+$name = $_POST["name"];
+$title = $_POST["title"];
+$email = $_POST["email"];
 $table = $_POST["table"];
 $rows = $_POST["rows"];
 
@@ -88,7 +91,7 @@ $sqlUitvoer	= mysqli_query($conn,$sqlCommand1);
 
 			
 // =========================retreiving from database==================== 		
-$sqlCommand ="SELECT * FROM $table ORDER BY ID DESC LIMIT $rows";
+$sqlCommand ="SELECT * FROM $id ORDER BY ID DESC LIMIT $rows";
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
           
 			//while ($row = $sqlUitvoer -> fetch_assoc())
@@ -111,7 +114,7 @@ $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
   
    <?php
    
- $sqlCommand ="SELECT * FROM $table ORDER BY ID DESC LIMIT $rows";
+ $sqlCommand ="SELECT * FROM $id ORDER BY ID DESC LIMIT $rows";
 
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 

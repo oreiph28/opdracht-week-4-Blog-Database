@@ -112,57 +112,26 @@
 </form>
  
  
+ 
+ 
+ 
+ 
+ 
 <!-- Admin  Menu -->
 <div class="adminMenu1">
 <!--  read -->
 <form action="functions/read.php" method="post">
 
-     <button id="btn_read">Read</button><br/>
+     <button id="btn_read">Read Topic</button><br/>
             <table class="table">
-                  <tr>
-                     <td>
-                         <label for="id"><b>Id:</b></label>
-                     </td>
-					 
-                     <td>
-                         <input id="id6" type="text" placeholder="Enter Id" name="id" ><br/>
-                     </td>
-                   </tr>
- 
- 
-                 <tr>
-                    <td>
-                         <label for="name"><b>Name:</b></label>
-                    </td>
-                    <td>
-                         <input id="id7" type="text" placeholder="Enter name" name="name" ><br/>
-                    </td>
-                 </tr>
- 
-                <tr>
-                   <td>
-                         <label  for="title"><b>Title:</b></label>
-                   </td>             
-				   <td>
-                         <input id="id8" type="text" placeholder="Enter title" name="title" ><br/>
-                   </td>
-                </tr>
-
-                <tr>
-                   <td>
-                         <label for="email"><b>Email:</b></label>
-                   </td>
-                   <td>
-                         <input id="id9" type="text" placeholder="Email" name="email" >
-                   </td>
-                </tr>
-              
+                 
+                     
                 <tr>
                    <td>
                          <label for="email"><b>Table:</b></label>
                    </td>
                    <td>
-                         <input id="id9" type="text" placeholder="Email" name="table" required>
+                         <input id="id9" type="text" placeholder="Enter Table Name" name="table" required>
                    </td>
                 </tr>
                
@@ -171,22 +140,100 @@
                          <label for="email"><b>Rows:</b></label>
                    </td>
                    <td>
-                         <input id="id9" type="text" placeholder="Enter numer table Rows" name="rows" required>
+                         <input id="id9" type="text" placeholder="Enter number of Table Rows" name="rows" required>
                    </td>
                 </tr>
   
-                <tr>			             
+                
+           </table>
+
+</form>	 
+
+
+<form action="functions/read_Id.php" method="post">
+		    <button id="btn_read">Read ID</button><br/>
+            <table class="table">
+                 
+                     
+                <tr>
                    <td>
-                         <label for="blog"><b>Bericht:</b></label>
+                         <label for="email"><b>Table:</b></label>
                    </td>
-                   <td id="id10">
-                         <textarea name="blog" cols="28" rows="9"  placeholder="Enter Blog" ></textarea>
+                   <td>
+                         <input id="id9" type="text" placeholder="Enter Table Name" name="table" required>
+                   </td>
+                </tr>
+               
+			     <tr>
+                   <td>
+                         <label for="email"><b>ID:</b></label>
+                   </td>
+                   <td>
+                         <input id="id9" type="text" placeholder="Enter ID Numer " name="id" required>
+                   </td>
+                </tr>
+  
+                
+           </table>
+             
+</form>
+
+
+		   
+<form action="functions/read_Subject.php" method="post">
+		    <button id="btn_read">Read subject</button><br/>
+            <table class="table">
+                 
+                     
+                <tr>
+                   <td>
+                         <label for="email"><b>Table:</b></label>
+                   </td>
+                   <td>
+                         <input id="id9" type="text" placeholder="Enter Table Name" name="table" required>
+                   </td>
+                </tr>
+               
+			     <tr>
+                   <td>
+                         <label for="email"><b>Subject:</b></label>
+                   </td>
+                   <td>
+                         <input id="id9" type="text" placeholder="Enter Topic Subject " name="subject" required>
+                   </td>
+                </tr>
+
+               <tr>
+                   <td>
+                         <label for="email"><b>Rows:</b></label>
+                   </td>
+                   <td>
+                         <input id="id9" type="text" placeholder="Enter Number of Table Rows" name="rows" required>
                    </td>
                 </tr>
            </table>
-
+		   
 </form>
  </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
 <!-- Admin  Menu -->

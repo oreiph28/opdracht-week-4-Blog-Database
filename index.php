@@ -10,14 +10,15 @@
         <title>BLOG</title>
         <link rel="stylesheet" href="qw.css">
         <link rel="stylesheet" href="navigation.css"> 
-			<link id="stylesheet" rel="stylesheet" type="text/css" href="stylesheet1.css"/>
-			<link  rel="stylesheet" type="text/css" href="stylesheets/style_table.css"/>
+	    <link id="stylesheet" rel="stylesheet" type="text/css" href="stylesheet1.css"/>
+		<link  rel="stylesheet" type="text/css" href="stylesheets/style_table.css"/>
+		
 		<script>
-    function setStyleSheet(url){
-       var stylesheet = document.getElementById("stylesheet");
-       stylesheet.setAttribute('href', url);
-    }
-    </script>	  
+                function setStyleSheet(url){
+                                            var stylesheet = document.getElementById("stylesheet");
+                                            stylesheet.setAttribute('href', url);
+                                           }
+        </script>	  
     </head>
 
 <body>
