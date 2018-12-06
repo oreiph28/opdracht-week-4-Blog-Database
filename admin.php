@@ -63,7 +63,7 @@
             <table class="table">
                   <tr>
                      <td>
-                         <label for="id"><b>Id:</b></label>
+                         <label><b>Id:</b></label>
                      </td>
 					 
                      <td>
@@ -74,7 +74,7 @@
  
                  <tr>
                     <td>
-                         <label for="name"><b>Name:</b></label>
+                         <label><b>Name:</b></label>
                     </td>
                     <td>
                          <input id="id2" type="text" placeholder="Enter name" name="name" required><br/>
@@ -83,7 +83,7 @@
  
                 <tr>
                    <td>
-                         <label  for="title"><b>Title:</b></label>
+                         <label><b>Title:</b></label>
                    </td>             
 				   <td>
                          <input id="id3" type="text" placeholder="Enter title" name="title" required><br/>
@@ -92,7 +92,7 @@
 
                 <tr>
                    <td>
-                         <label for="email"><b>Email:</b></label>
+                         <label><b>Email:</b></label>
                    </td>
                    <td>
                          <input id="id4" type="text" placeholder="Email" name="email" required>
@@ -101,7 +101,7 @@
   
                 <tr>			             
                    <td>
-                         <label for="blog"><b>Bericht:</b></label>
+                         <label><b>Bericht:</b></label>
                    </td>
                    <td id="id5">
                          <textarea name="blog" cols="28" rows="9"  placeholder="Enter Blog" required></textarea>
@@ -122,25 +122,25 @@
 <!--  read -->
 <form action="functions/read.php" method="post">
 
-     <button id="btn_read">Read Topic</button><br/>
+     <button >Read Topic</button><br/>
             <table class="table">
                  
                      
                 <tr>
                    <td>
-                         <label for="email"><b>Table:</b></label>
+                         <label><b>Topic:</b></label>
                    </td>
                    <td>
-                         <input id="id9" type="text" placeholder="Enter Table Name" name="table" required>
+                         <input type="text" placeholder="Enter Table Name" name="table" required>
                    </td>
                 </tr>
                
 			     <tr>
                    <td>
-                         <label for="email"><b>Rows:</b></label>
+                         <label><b>Rows:</b></label>
                    </td>
                    <td>
-                         <input id="id9" type="text" placeholder="Enter number of Table Rows" name="rows" required>
+                         <input type="text" placeholder="Enter number of Table Rows" name="rows" required>
                    </td>
                 </tr>
   
@@ -148,28 +148,28 @@
            </table>
 
 </form>	 
-
+  <br />
 
 <form action="functions/read_Id.php" method="post">
-		    <button id="btn_read">Read ID</button><br/>
+		    <button >Read ID</button><br/>
             <table class="table">
                  
                      
                 <tr>
                    <td>
-                         <label for="email"><b>Table:</b></label>
+                         <label><b>Topic:</b></label>
                    </td>
                    <td>
-                         <input id="id9" type="text" placeholder="Enter Table Name" name="table" required>
+                         <input type="text" placeholder="Enter Table Name" name="table" required>
                    </td>
                 </tr>
                
 			     <tr>
                    <td>
-                         <label for="email"><b>ID:</b></label>
+                         <label><b>Id:</b></label>
                    </td>
                    <td>
-                         <input id="id9" type="text" placeholder="Enter ID Numer " name="id" required>
+                         <input type="text" placeholder="Enter ID Numer " name="id" required>
                    </td>
                 </tr>
   
@@ -177,38 +177,38 @@
            </table>
              
 </form>
-
+  <br />
 
 		   
 <form action="functions/read_Subject.php" method="post">
-		    <button id="btn_read">Read subject</button><br/>
+		    <button>Read subject</button><br/>
             <table class="table">
                  
                      
                 <tr>
                    <td>
-                         <label for="email"><b>Table:</b></label>
+                         <label><b>Topic:</b></label>
                    </td>
                    <td>
-                         <input id="id9" type="text" placeholder="Enter Table Name" name="table" required>
+                         <input type="text" placeholder="Enter Table Name" name="table" required>
                    </td>
                 </tr>
                
 			     <tr>
                    <td>
-                         <label for="email"><b>Subject:</b></label>
+                         <label><b>Subj:</b></label>
                    </td>
                    <td>
-                         <input id="id9" type="text" placeholder="Enter Topic Subject " name="subject" required>
+                         <input type="text" placeholder="Enter Topic Subject " name="subject" required>
                    </td>
                 </tr>
 
                <tr>
                    <td>
-                         <label for="email"><b>Rows:</b></label>
+                         <label><b>Rows:</b></label>
                    </td>
                    <td>
-                         <input id="id9" type="text" placeholder="Enter Number of Table Rows" name="rows" required>
+                         <input type="text" placeholder="Enter Number of Table Rows" name="rows" required>
                    </td>
                 </tr>
            </table>
@@ -245,7 +245,7 @@
             <table class="table">
                   <tr>
                      <td>
-                         <label for="id"><b>Id:</b></label>
+                         <label><b>Id:</b></label>
                      </td>
 					 
                      <td>
@@ -256,7 +256,7 @@
  
                  <tr>
                     <td>
-                         <label for="name"><b>Name:</b></label>
+                         <label><b>Name:</b></label>
                     </td>
                     <td>
                          <input id="id12" type="text" placeholder="Enter name" name="name" required><br/>
@@ -265,7 +265,7 @@
  
                 <tr>
                    <td>
-                         <label  for="title"><b>Title:</b></label>
+                         <label><b>Title:</b></label>
                    </td>             
 				   <td>
                          <input id="id13" type="text" placeholder="Enter title" name="title" required><br/>
@@ -274,7 +274,7 @@
 
                 <tr>
                    <td>
-                         <label for="email"><b>Email:</b></label>
+                         <label><b>Email:</b></label>
                    </td>
                    <td>
                          <input id="id14" type="text" placeholder="Email" name="email" required>
@@ -283,7 +283,7 @@
   
                 <tr>			             
                    <td>
-                         <label for="blog"><b>Bericht:</b></label>
+                         <label><b>Bericht:</b></label>
                    </td>
                    <td id="id15">
                          <textarea name="blog" cols="28" rows="9"  placeholder="Enter Blog" required></textarea>
@@ -306,7 +306,7 @@
             <table class="table">
                   <tr>
                      <td>
-                         <label for="id"><b>Id:</b></label>
+                         <label><b>Id:</b></label>
                      </td>
 					 
                      <td>
@@ -317,7 +317,7 @@
  
                  <tr>
                     <td>
-                         <label for="name"><b>Name:</b></label>
+                         <label><b>Name:</b></label>
                     </td>
                     <td>
                          <input id="id17" type="text" placeholder="Enter name" name="name" required><br/>
@@ -326,7 +326,7 @@
  
                 <tr>
                    <td>
-                         <label  for="title"><b>Title:</b></label>
+                         <label><b>Title:</b></label>
                    </td>             
 				   <td>
                          <input id="id18" type="text" placeholder="Enter title" name="title" required><br/>
@@ -335,7 +335,7 @@
 
                 <tr>
                    <td>
-                         <label for="email"><b>Email:</b></label>
+                         <label><b>Email:</b></label>
                    </td>
                    <td>
                          <input id="id19" type="text" placeholder="Email" name="email" required>
@@ -344,7 +344,7 @@
   
                 <tr>			             
                    <td>
-                         <label for="email"><b>Bericht:</b></label>
+                         <label><b>Bericht:</b></label>
                    </td>
                    <td id="20">
                          <textarea name="blog" cols="28" rows="9"  placeholder="Enter Blog" required></textarea>
@@ -364,7 +364,7 @@
             <table class="table">
                   <tr>
                      <td>
-                         <label for="id"><b>Id:</b></label>
+                         <label><b>Id:</b></label>
                      </td>
 					 
                      <td>
@@ -375,7 +375,7 @@
  
                  <tr>
                     <td>
-                         <label for="name"><b>Name:</b></label>
+                         <label><b>Name:</b></label>
                     </td>
                     <td>
                          <input id="id22" type="text" placeholder="Enter name" name="name" required><br/>
@@ -384,7 +384,7 @@
  
                 <tr>
                    <td>
-                         <label  for="title"><b>Title:</b></label>
+                         <label><b>Title:</b></label>
                    </td>             
 				   <td>
                          <input id="id23" type="text" placeholder="Enter title" name="title" required><br/>
@@ -393,7 +393,7 @@
 
                 <tr>
                    <td>
-                         <label for="email"><b>Email:</b></label>
+                         <label><b>Email:</b></label>
                    </td>
                    <td>
                          <input id="id24" type="text" placeholder="Email" name="email" required>
@@ -402,7 +402,7 @@
   
                 <tr>			             
                    <td>
-                         <label for="blog"><b>Bericht:</b></label>
+                         <label><b>Bericht:</b></label>
                    </td>
                    <td id="25">
                          <textarea name="blog" cols="28" rows="9"  placeholder="Enter Blog" required></textarea>
@@ -423,7 +423,7 @@
             <table class="table">
                   <tr>
                      <td>
-                         <label for="id"><b>Id:</b></label>
+                         <label><b>Id:</b></label>
                      </td>
 					 
                      <td>
@@ -434,7 +434,7 @@
  
                  <tr>
                     <td>
-                         <label for="name"><b>Name:</b></label>
+                         <label><b>Name:</b></label>
                     </td>
                     <td>
                          <input id="id27" type="text" placeholder="Enter name" name="name" required><br/>
@@ -443,7 +443,7 @@
  
                 <tr>
                    <td>
-                         <label  for="title"><b>Title:</b></label>
+                         <label><b>Title:</b></label>
                    </td>             
 				   <td>
                          <input id="id28" type="text" placeholder="Enter title" name="title" required><br/>
@@ -452,7 +452,7 @@
 
                 <tr>
                    <td>
-                         <label for="email"><b>Email:</b></label>
+                         <label><b>Email:</b></label>
                    </td>
                    <td>
                          <input id="id29" type="text" placeholder="Email" name="email" required>
@@ -461,7 +461,7 @@
   
                 <tr>			             
                    <td>
-                         <label for="email"><b>Bericht:</b></label>
+                         <label><b>Bericht:</b></label>
                    </td>
                    <td id="30">
                          <textarea name="blog" cols="28" rows="9"  placeholder="Enter Blog" required></textarea>
@@ -474,102 +474,10 @@
   
   
 
-   <p id="create">Assignment</p>
-<!-- ==========================================================================
-=========================DATABASE OUTPUT=======================================
-============================================================================ -->
-
- 
- 
- <!-- Admin Input -->
- <div class="AdminInput"></div>
-
- <!--  Server Data -->  
-   <table id="data" width="1350">
-            <colgroup>
-                      <col span="1" style="background-color:red">
-                      <col span="3" style="background-color:#FFDC7B">
-	                  <col span="2" style="background-color:white">
-            </colgroup>
-			
-	<thead>
-            <tr>
-                 <th id="col_id">ID</th>
-				 <th id="col_name">Name</th>
-				 <th id="col_title">File Title</th>
-				 <th id="col_email">Email</th>
-			     <th id="col_blog">Blog</th>
-				 <th id="col_file">File</th>
-            </tr>
-   </thead>
-            <tbody>
-		
-        <?php         
-$username = "oreiph";
-$password = "1771128903";
-$dbname = "myblog";
-$servername = "localhost";
-$date = date("Y-m-d H:i:s");
-
-$conn = mysqli_connect($servername, $username, $password);
-$sqlCommand1= "use myblog";
-$sqlUitvoer	= mysqli_query($conn,$sqlCommand1);
-
-			
-// =========================retreiving from database==================== 		
-$sqlCommand ="SELECT * FROM sport ORDER BY ID DESC LIMIT 10";
-$sqlUitvoer	= mysqli_query($conn,$sqlCommand);
-          
-			//while ($row = $sqlUitvoer -> fetch_assoc())
-			while ($row = mysqli_fetch_array($sqlUitvoer)) 
-             {
-            ?>	
-                <tr>
-                    <td><?php echo $row['ID']?></td>
-                    <td><?php echo $row['name']?></td>
-					<td><?php echo $row['title']?></td>
-                    <td><?php echo $row['email']?></td>
-					<td><?php echo $row['blog']?></td>   
-					<td><?php echo $row['file']?></td>                
-                </tr>
-            <?php
-           }
-            ?>
-            </tbody>
-     </table>
-  
-   <?php
-   
- $sqlCommand ="SELECT * FROM sport ORDER BY ID DESC LIMIT 10";
-
-$sqlUitvoer	= mysqli_query($conn,$sqlCommand);
-
-if ($sqlUitvoer->num_rows>0){
-
-         while ($row = mysqli_fetch_array($sqlUitvoer)) {
-      
-      	
-		echo "<p id='blog2'>"."<b>"."File Id: "."</b>".$row['ID']."<br>";
-		echo "<b>"."User Name: "."</b>".$row['name']."<br>";
-		echo "<b>"."User Email: "."</b>".$row['email']."<br>";
-		echo "<b>"."File Name: "."</b>".$row['title']."<br>";
-		echo "<img id='img1' src='images/".$row['file']."' >"."</p>";
-		
-     
-    }}
-    				   
-   
-   
-$conn->close();
-?>
 
 </div>
    <div id="AdminText">
  </div>
- 
- 
- 
- 
- 
+
   </body>
 </html>
