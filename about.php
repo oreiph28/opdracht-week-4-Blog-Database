@@ -68,7 +68,7 @@
    Blog administrator.<br />
 
    </p>
-   <img id="img1" src="../../images/nelio1.png" width="192" height="192" alt="" title="blog administartor" />
+   <img id="img1" src="../images/nelio1.png" width="192" height="192" alt="" title="blog administartor" />
 </div>
 
 

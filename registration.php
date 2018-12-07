@@ -167,6 +167,33 @@ a {
 </form>
 
 
+<!-- =======================Admin Login============================== -->
+
+<form id="id02"  class="login"  action="login.php" method="post">
+      <div class="imgcontainer">
+	       <img src="images/login.jpg" alt="login" class="login1">
+	  </div>
+	  
+	  <div class="container1">
+	       <label ><b>Username</b></label>
+		   <input type="text" placeholder="Enter Username" name="uname" required>
+		   
+		   <label> <b>Password</b></label>
+	       <input type="password" placeholder="Enter Password" name="psw" required>
+		   
+		   <button class="button_login" type="submit">Login</button>
+		   
+		   <label>
+		       <input type="checkbox" checked="checked" name="remember">Remember
+		   </label>	   
+	  </div>
+
+	  <div class="container1" style="background-color:#f1f1f1">
+    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+	
+  </div>
+</form>
 
 </body>
 </html>
