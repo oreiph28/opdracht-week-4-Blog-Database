@@ -16,5 +16,4 @@ echo $name."<br>";
 echo $email."<br>";
 echo $text."<br>";
 echo $subject;
-
 ?>

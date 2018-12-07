@@ -41,7 +41,7 @@
     </div>
   </div>
    <a href="contact_form.php">Contact</a>
-    <a href="registration.php">Register</a>
+   <a href="registration.php">Register</a>
 </div>
 
   
@@ -68,7 +68,7 @@
    Blog administrator.<br />
 
    </p>
-   <img id="img1" src="../images/nelio1.png" width="192" height="192" alt="" title="blog administartor" />
+   <img id="img1" src="images/nelio1.png" width="192" height="192" alt="" title="blog administartor" />
 </div>
 
 
@@ -99,9 +99,6 @@
 </form>
 
 
-
-
-
 <!-- =======================Admin Login============================== -->
 
 <form id="id02"  class="login"  action="login.php" method="post">
@@ -129,13 +126,6 @@
 	
   </div>
 </form>
-
-
-  
-
- 
-  
-
 
   <br />
   <br />

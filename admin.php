@@ -2,10 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
-    <meta name="dcterms.created" content="ma, 03 dec 2018 14:43:29 GMT">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
 	<link rel="stylesheet" href="administration2.css">
 	<link rel="stylesheet" href="navigation.css">
     <title>Administration</title>
@@ -35,9 +31,10 @@
 	                   <a href="index_politics.php">POLITICS</a>
 	                   <a href="index.php">MOST POPULAR TOPICS</a>
                   </div>
+				  <a href="contact_form.php">Contact</a>
+                  <a href="registration.php">Register</a>
       </div> 
-       <a href="contact_form.php">Contact</a>
-       <a href="registration.php">Register</a>
+       
  </div>
 
    
@@ -45,7 +42,6 @@
 ============================ADMINISTRATION TEXT=========================
 ==================================================================== -->
 <h1 id="text3">Administration</h1>
-
 
  <!-- ==============================================================
  ===========================ADMIN PANEL===========================
@@ -111,12 +107,7 @@
 
 </form>
  
- 
- 
- 
- 
- 
- 
+
 <!-- Admin  Menu -->
 <div class="adminMenu1">
 <!--  read -->
@@ -216,26 +207,7 @@
 </form>
  </div>
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
 <!-- Admin  Menu -->
 <div class="adminMenu2">
 <!--  update -->
@@ -472,9 +444,6 @@
 </form>
  </div>
   
-  
-
-
 </div>
    <div id="AdminText">
  </div>

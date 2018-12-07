@@ -2,18 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
-    <meta name="dcterms.created" content="ma, 03 dec 2018 13:15:26 GMT">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
 	      <link rel="stylesheet" href="navigation.css"> 
-	        <link rel="stylesheet" href="contact2.css">
+	      <link rel="stylesheet" href="contact2.css">
     <title>contact</title>
-    
-    <!--[if IE]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
+  
+  
   <body>
 <div id="footer"></div>
 
@@ -43,11 +37,7 @@
     <a href="registration.php">Register</a>
 </div>
 
-
-
 <!-- =======================User Login============================== -->
-
-
 <form id="id01"  class="login"  action="user_login.php" method="post">
       <div class="imgcontainer">
 	       <img src="images/login.jpg" alt="login" class="login">
@@ -75,11 +65,7 @@
 </form>
 
 
-
-
-
 <!-- =======================Admin Login============================== -->
-
 <form id="id02"  class="login"  action="login.php" method="post">
       <div class="imgcontainer">
 	       <img src="images/login.jpg" alt="login" class="login1">
@@ -106,14 +92,10 @@
   </div>
 </form>
 
-
-
-
-
-
 <br />
 <br />
 <br />
+
 <!--   =============registration form=========================
 ==============================================================
 ========================================================== -->
@@ -141,10 +123,7 @@
 
     <button type="submit"  class="registerbtn">Send</button>
   </div>
-
-
 </form>
-
 
 <br />
 <div id="header"></div>

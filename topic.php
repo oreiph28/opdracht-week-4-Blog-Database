@@ -3,15 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="generator" content="Ornelio">
-    <meta name="dcterms.created" content="wo, 28 nov 2018 12:11:21 GMT">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title></title>
-    
-    <!--[if IE]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>Topic</title>   
   </head>
+  
   <body>
 
   <!-- ==========================
@@ -19,20 +13,18 @@
  ===================================
  ====================================== -->
   
-  <script type="text/javascript">
- function myNews(){
- var result="<?php news();?>";
- document.getElementById("blog").innerHTML = result;
- document.getElementById("text3").innerHTML = "NEWSqwerty";
-
- //alert(result);
-  return false; 
- }
+ <script type="text/javascript">
+        function myNews(){
+                          var result="<?php news();?>";
+                          document.getElementById("blog").innerHTML = result;
+                          document.getElementById("text3").innerHTML = "NEWSqwerty";
+                          return false; 
+                         }
 </script>
 
 
 <h1>
-<font color="#FDFFFA">
+    <font color="#FDFFFA">
 <?php
 
 function news() {
@@ -48,33 +40,26 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                            }
 
 $sqlCommand ="SELECT * FROM news ORDER BY ID DESC LIMIT 4";
-  //$sqlCommand ="SELECT * FROM blog ORDER BY ID DESC LIMIT 4";
-
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
-if ($sqlUitvoer->num_rows>0){
-
-         while ($row = mysqli_fetch_array($sqlUitvoer)) {
-      
-      	echo "<p id='blog'>"."<img src='images/".$row['file']."' >";
-		echo "<br>".$row['name']."<br>";
-		echo $row['title']."<br>";
-		echo $row['email']."<br>";
-      	echo $row['blog']."</p>";
-     
-    }}
+   if ($sqlUitvoer->num_rows>0){
+                                while ($row = mysqli_fetch_array($sqlUitvoer)) {
+                                                                                echo "<p id='blog'>"."<img src='images/".$row['file']."' >";
+		                                                                        echo "<br>".$row['name']."<br>";
+		                                                                        echo $row['title']."<br>";
+		                                                                        echo $row['email']."<br>";
+                                                                             	echo $row['blog']."</p>"; 
+                                                                                }
+				               }
     				   
 echo "connected to server";
-}
+                           }
 
 ?>
 </font>
 </h1>
 
 
-  
-  
-  
   <!-- ==========================
  ============== SPORT===================
  ===================================

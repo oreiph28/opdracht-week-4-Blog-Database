@@ -22,27 +22,27 @@ body{
         }    
      
      /*administrator text*/
-#text3 {
-         text-align:center;
-         position:relative;
-         left:350px;
-         top:25px;
-         background-color:white;
-         width:400px;
-         border:6px;
-         border-style:solid;
-         border-color:#FF8D2E;
-         border-radius:20%;
-         }  
+#text3{
+       text-align:center;
+       position:relative;
+       left:350px;
+       top:25px;
+       background-color:white;
+       width:400px;
+       border:6px;
+       border-style:solid;
+       border-color:#FF8D2E;
+       border-radius:20%;
+       }  
 
   /*User panel text*/
 #panel_T{
-           position:relative;          
-           text-align:center;
-           top:-5px;
-           left:-30px;
-           color:white;
-           }        
+         position:relative;          
+         text-align:center;
+         top:-5px;
+         left:-30px;
+         color:white;
+         }        
          
       
   /*Panel background*/

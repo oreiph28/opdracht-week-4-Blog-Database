@@ -125,10 +125,6 @@
   </div>
 </form>
 
-
-
-
-
 <!-- =======================Admin Login============================== -->
 
 <form id="id02"  class="login"  action="login.php" method="post">
@@ -157,20 +153,10 @@
   </div>
 </form>
 
-
-
-
-
-
-
-  
   <!-- ===========================================================================================
   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   ============================================================================================= -->
-  
-  
- 
- 
+
    <?php
 $servername = "localhost";
 $username = "oreiph";
@@ -183,15 +169,11 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                             exit();
                            }
 
-//$sqlCommand ="SELECT * FROM news ORDER BY ID DESC LIMIT 4";
-  $sqlCommand ="SELECT * FROM popular ORDER BY ID DESC LIMIT 4";
-
+$sqlCommand ="SELECT * FROM popular ORDER BY ID DESC LIMIT 4";
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
 if ($sqlUitvoer->num_rows>0){
-
          while ($row = mysqli_fetch_array($sqlUitvoer)) {
-      
       	echo "<p id='blog2'>"."<img id='img1' src='images/".$row['file']."' >";
 		echo "<br>"."<br>"."<br>"."<b>"."Name:  "."</b>".$row['name']."<br>";
 		echo "<b>"."Title:  "."</b>".$row['title']."<br>";
@@ -200,30 +182,18 @@ if ($sqlUitvoer->num_rows>0){
       	echo $row['blog']."</p>";
      
     }}
-    				   
-
-
 ?> 
-   
- 
 
-
-  
   <!-- ===========================================================================================
   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   ============================================================================================= -->  
-
    <script type="text/javascript">
  function myNews(){
- 
- 
-  document.getElementById("text3").innerHTML = "NEWkllkS";
+document.getElementById("text3").innerHTML = "NEWkllkS";
 var result="<?php news1();?>";
 document.getElementById("blog").innerHTML = result;
  } 
 </script> 
-
-
 
   <?php
 function news1() {
@@ -271,8 +241,6 @@ document.getElementById("blog").innerHTML = result;
  } 
 </script> 
 
-
-
   <?php
 function politics1() {
 $servername = "localhost";
@@ -287,10 +255,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                            }
 
 $sqlCommand ="SELECT * FROM politics ORDER BY ID DESC LIMIT 4";
-  //$sqlCommand ="SELECT * FROM blog ORDER BY ID DESC LIMIT 4";
-
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
-
 if ($sqlUitvoer->num_rows>0){
 
          while ($row = mysqli_fetch_array($sqlUitvoer)) {
@@ -335,14 +300,11 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                            }
 
 $sqlCommand ="SELECT * FROM sport ORDER BY ID DESC LIMIT 4";
-  //$sqlCommand ="SELECT * FROM blog ORDER BY ID DESC LIMIT 4";
-
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
 if ($sqlUitvoer->num_rows>0){
 
-         while ($row = mysqli_fetch_array($sqlUitvoer)) {
-      
+         while ($row = mysqli_fetch_array($sqlUitvoer)) {     
       	echo "<p id='blog'>"."<img src='images/".$row['file']."' >";
 		echo "<br>".$row['name']."<br>";
 		echo $row['title']."<br>";
@@ -384,14 +346,11 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                            }
 
 $sqlCommand ="SELECT * FROM culture ORDER BY ID DESC LIMIT 4";
-  //$sqlCommand ="SELECT * FROM blog ORDER BY ID DESC LIMIT 4";
-
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
 if ($sqlUitvoer->num_rows>0){
 
-         while ($row = mysqli_fetch_array($sqlUitvoer)) {
-      
+         while ($row = mysqli_fetch_array($sqlUitvoer)) {    
       	echo "<p id='blog2'>"."<img src='images/".$row['file']."' >";
 		echo "<br>".$row['name']."<br>";
 		echo $row['title']."<br>";

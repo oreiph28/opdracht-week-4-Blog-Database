@@ -3,14 +3,11 @@
 
    body{  
         background-color:#A2A2A2;
-          background-image:url('images/wallpaper4.jpg');
-        /*background-repeat:repeat-y;*/
-       background-size:100%;
+        background-image:url('images/wallpaper4.jpg');
+        background-size:100%;
         size:1360px 968px;
         max-height:768px;
        }
-
-
 
 #header{
         text-align:center;
@@ -79,15 +76,12 @@ form.blog{
           font-family:fantasy;
           color:#E8EBFF;
           }
-
-    
+ 
 table.table{
             position:relative;
             left:5px;
             top:35px;
-            }       
-          
-          
+           }             
 
 #blog_b{
         position:relative;
@@ -95,8 +89,7 @@ table.table{
         top:30px;
         resize:none;
         }       
-          
-  
+           
  #text3 {
          background-image:url('images/wall_blog.jpg');
          background-size:cover;
@@ -133,34 +126,32 @@ table.table{
          }
          
  #img1{
-  border-width:8px;
-  border-style:solid;
-  border-color:#FF8D2E;
-  }
+       border-width:8px;
+       border-style:solid;
+       border-color:#FF8D2E;
+       }
  
 #blog2{
-         font-size:13px;
-         font-family:sans-serif;
-         text-align:center;
-         position:relative;
-         background-image:url('images/wall_blog2.jpg');
-         background-repeat:no-repeat;
-         background-color:#FFF7EB;
-         background-size:cover;
-         width:950px;
-         left:200px;
-         top:-20px;
-         border:8px;
-         margin:4px;
-         padding:30px;
-         border-style:solid;
-         border-color:#FF8D2E;
-         border-radius:20%;
-         }
-         
-         
-         
- #data1{
+       font-size:13px;
+       font-family:sans-serif;
+       text-align:center;
+       position:relative;
+       background-image:url('images/wall_blog2.jpg');
+       background-repeat:no-repeat;
+       background-color:#FFF7EB;
+       background-size:cover;
+       width:950px;
+       left:200px;
+       top:-20px;
+       border:8px;
+       margin:4px;
+       padding:30px;
+       border-style:solid;
+       border-color:#FF8D2E;
+       border-radius:20%;
+       }
+        
+#data1{
        position:relative;
        top:-505px;
        left:351px;
@@ -193,66 +184,53 @@ table.table{
          }
         
          
-   #radio{
-         position:relative;
-         top:-1500px;
-         left:1200px;
-         width:100px;
-          }
-          
-          
-          
- /*==========================================login =====================*/         
-          
-          
-    
+#radio{
+       position:relative;
+       top:-1500px;
+       left:1200px;
+       width:100px;
+       }
+       
+ /*==========================================login =====================*/            
  /* Bordered form */
 form.login {
-      display: none; 
-    z-index: 1; /* Sit on top */
-    position:fixed;
-    top:1px;
-    left:1px;
-    border: 6px solid #FF590B;
-    width:430px;
-    opacity:0.9;
-    background-color:white;
-}     
-
-
-
+           display: none; 
+           z-index: 1; /* Sit on top */
+           position:fixed;
+           top:1px;
+           left:1px;
+           border: 6px solid #FF590B;
+           width:430px;
+           opacity:0.9;
+           background-color:white;
+           }     
 
 /* Full-width input fields */
 input[type=text], input[type=password],textarea{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
+                                                width: 100%;
+                                                padding: 12px 20px;
+                                                margin: 8px 0;
+                                                display: inline-block;
+                                                border: 1px solid #ccc;
+                                                box-sizing: border-box;
+                                               }
 
 /* Set a style for all buttons */
 button.button_login {
-    background-color: #FF590B;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-
+                     background-color: #FF590B;
+                     color: white;
+                     padding: 14px 20px;
+                     margin: 8px 0;
+                     border: none;
+                     cursor: pointer;
+                     width: 100%;
+                     }
 
 .container {
-    padding: 16px;
-}
+            padding: 16px;
+           }
 
-
-
-
-  #submit{
+#submit{
         position:relative;
         left:250px;
         top:70px;
@@ -260,25 +238,20 @@ button.button_login {
         }        
       
 #file{
- position:relative;
-        left:250px;
-        top:70px;
-        width:150px;
- }
+      position:relative;
+      left:250px;
+      top:70px;
+      width:150px;
+     }
 
-
-        
-        
+     
 div.topic_t{
- font-size:24px;
-background-color:white;
- }
+           font-size:24px;
+           background-color:white;
+           }
 
-
-  
-  
  #hr{
-border-top: 1px solid black;
-  } 
+     border-top: 1px solid black;
+    } 
   
   

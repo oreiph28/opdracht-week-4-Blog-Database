@@ -2,16 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
-    <meta name="dcterms.created" content="ma, 03 dec 2018 13:15:26 GMT">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
 	      <link rel="stylesheet" href="navigation.css"> 
 	        <link rel="stylesheet" href="index_blog2.css">
     <title> index_blog</title>
-    
-
   </head>
+  
   <body>
 <!-- <?php include 'topic.php';?> -->
   <p id="demo"></p>
@@ -49,7 +44,6 @@
 </div>
 
 
-
 <!--   =================================================================
 ==================================BLOG TEXT==========================
 ==================================================================== -->
@@ -85,7 +79,6 @@
 </form>
  
   
-
 <!--   =================================================================
 =============================BLOG INPUT FORM============================
 ==================================================================== -->
@@ -134,26 +127,19 @@
 							 <textarea id="text" cols="28" rows="9" name="image_text" placeholder="Say something about this image..."></textarea>
   	                         </td>
 				   </tr>
-	                
-				   
+	                			   
 	         </table>
 			 
 			  <input id="submit" type="submit" />
 			  <br/>
 		      <input id="file" type="file" name="image">
 			
-			 
- 	 
   </form>
   
-  
+
    <!-- ===========================================================================================
   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   ============================================================================================= -->
-  
-  
- 
- 
    <?php
 $servername = "localhost";
 $username = "oreiph";
@@ -165,16 +151,12 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                             echo "Connection failed " . $conn->connect_error; 
                             exit();
                            }
-
+						   
 $sqlCommand ="SELECT * FROM politics ORDER BY ID DESC LIMIT 4";
-
-
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
-
 if ($sqlUitvoer->num_rows>0){
 
-         while ($row = mysqli_fetch_array($sqlUitvoer)) {
-      
+         while ($row = mysqli_fetch_array($sqlUitvoer)) {     
       	echo "<p id='blog2'>"."<img id='img1' src='images/".$row['file']."' >";
 		echo "<br>"."<br>"."<br>"."<b>"."Name:  "."</b>".$row['name']."<br>";
 		echo "<b>"."Title:  "."</b>".$row['title']."<br>";
@@ -183,8 +165,6 @@ if ($sqlUitvoer->num_rows>0){
       	echo $row['blog']."</p>";
      
     }}
-    				   
-
 
 ?> 
 
