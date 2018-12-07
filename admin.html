@@ -1,14 +1,3 @@
-
-     <?php
-$username = "oreiph";
-$password = "1771128903";
-$dbname = "myblog";
-$servername = "localhost";
-$date = date("Y-m-d H:i:s");
-
-$conn = mysqli_connect($servername, $username, $password);
-	?> 
-	
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,12 +5,11 @@ $conn = mysqli_connect($servername, $username, $password);
 	<link rel="stylesheet" href="administration2.css">
 	<link rel="stylesheet" href="navigation.css">
     <title>Administration</title>
+    
+
   </head>
-  
-  
   <body>
-  
-  
+
 <div id="header"></div>
 
 <!-- ====================NAVIGATION BAR =====================================
@@ -55,11 +43,8 @@ $conn = mysqli_connect($servername, $username, $password);
 ==================================================================== -->
 <h1 id="text3">Administration</h1>
 
-
-
-
  <!-- ==============================================================
- ===========================CREATE===========================
+ ===========================ADMIN PANEL===========================
  ================================================================ -->
 <div class="admin_Back">
 <h1 id="panel_T">User Panel</h1>
@@ -68,88 +53,71 @@ $conn = mysqli_connect($servername, $username, $password);
 <!-- Admin  Menu -->
 <div class="adminMenu">
 <!--  create -->
-<form action="functions/create_db.php" method="post">
-<br /><br />
-  <button>Create DB</button><br/>
+<form action="functions/create.php" method="post">
+
+     <button id="btn_create">Create</button><br/>
             <table class="table">
-                 
-                     
+                  <tr>
+                     <td>
+                         <label><b>Id:</b></label>
+                     </td>
+					 
+                     <td>
+                         <input id="id1" type="text" placeholder="Enter Id" name="id" required><br/>
+                     </td>
+                   </tr>
+ 
+ 
+                 <tr>
+                    <td>
+                         <label><b>Name:</b></label>
+                    </td>
+                    <td>
+                         <input id="id2" type="text" placeholder="Enter name" name="name" required><br/>
+                    </td>
+                 </tr>
+ 
                 <tr>
                    <td>
-                         <label><b>Database:</b></label>
+                         <label><b>Title:</b></label>
+                   </td>             
+				   <td>
+                         <input id="id3" type="text" placeholder="Enter title" name="title" required><br/>
                    </td>
-                   <td>
-                         <input type="text" placeholder="Enter Database Name" name="database" required>
-                   </td>
-                </tr>  
-           </table>
+                </tr>
 
-</form>	 
-  <br />
-
-<form action="functions/delete_db.php" method="post">
-		    <button>Delete DB</button><br/>
-            <table class="table">
-			     <tr>
+                <tr>
                    <td>
-                         <label><b>Database</b></label>
+                         <label><b>Email:</b></label>
                    </td>
                    <td>
-                         <input type="text" placeholder="Enter Database Name " name="database" required>
+                         <input id="id4" type="text" placeholder="Email" name="email" required>
                    </td>
                 </tr>
   
-                
+                <tr>			             
+                   <td>
+                         <label><b>Bericht:</b></label>
+                   </td>
+                   <td id="id5">
+                         <textarea name="blog" cols="28" rows="9"  placeholder="Enter Blog" required></textarea>
+                   </td>
+                </tr>
            </table>
-             
-</form>
-  <br />
-
-	
-
-<form>
-<table class="table">
-                 <br />
-                    
-                <tr>   
-                 <td
-<p id='databases'>
-<b>Databases:</b>
-<br/><br/>
- <?php
-
-		 $sqlCommand1= "show databases";
-         $sqlUitvoer	= mysqli_query($conn,$sqlCommand1);
-		 while ($row = mysqli_fetch_array($sqlUitvoer)) {
-                                                         echo "<b>"."Db: ".$row['Database']."</b>". "\n"."<br>";
-                                                         }
-?>
-  </p>
-                 
-  </td>
-  </tr>
-                
-           </table>
-             
-
-</form>
-
-
 
 </form>
  
- 
- 
- 
+</div>
 
-<!-- ===================================================================================
-====================================READ=========================================
-==================================================================================== -->
+
+
+<!-- Admin  Menu -->
 <div class="adminMenu1">
 <!--  read -->
+<br />
 <form action="functions/read.php" method="post">
-<br /><br />
-     <button>Read Topic</button><br/>
+
+     <button >Read Topic</button><br/>
             <table class="table">
                  
                      
@@ -247,94 +215,57 @@ $conn = mysqli_connect($servername, $username, $password);
 <!-- Admin  Menu -->
 <div class="adminMenu2">
 <!--  update -->
-<form action="functions/create_table.php" method="post">
-<br /><br />
-     <button>Create Table</button><br/>
+<form action="functions/update.php" method="post">
+
+     <button id="btn_update">Update</button><br/>
             <table class="table">
                   <tr>
+                     <td>
+                         <label><b>Id:</b></label>
+                     </td>
+					 
+                     <td>
+                         <input id="id11" type="text" placeholder="Enter Id" name="id" required><br/>
+                     </td>
+                   </tr>
+ 
+ 
+                 <tr>
+                    <td>
+                         <label><b>Name:</b></label>
+                    </td>
+                    <td>
+                         <input id="id12" type="text" placeholder="Enter name" name="name" required><br/>
+                    </td>
+                 </tr>
+ 
+                <tr>
                    <td>
-                         <label><b>Database</b></label>
+                         <label><b>Title:</b></label>
+                   </td>             
+				   <td>
+                         <input id="id13" type="text" placeholder="Enter title" name="title" required><br/>
+                   </td>
+                </tr>
+
+                <tr>
+                   <td>
+                         <label><b>Email:</b></label>
                    </td>
                    <td>
-                         <input type="text" placeholder="Enter Database Name " name="database" required>
+                         <input id="id14" type="text" placeholder="Email" name="email" required>
                    </td>
                 </tr>
   
-                   <tr>
+                <tr>			             
                    <td>
-                         <label><b>Table</b></label>
+                         <label><b>Bericht:</b></label>
                    </td>
-                   <td>
-                         <input type="text" placeholder="Enter Table Name " name="table" required>
-                   </td>
-                </tr>
-                
-				 <tr>
-                   <td>
-                         <label><b>Values</b></label>
-                   </td>
-                   <td>
-                         <input type="text" placeholder="Enter Values " name="values" required>
+                   <td id="id15">
+                         <textarea name="blog" cols="28" rows="9"  placeholder="Enter Blog" required></textarea>
                    </td>
                 </tr>
            </table>
-
-</form>	 
-  <br />
-
-<form action="functions/delete_table.php" method="post">
-		    <button>Delete Table</button><br/>
-            <table class="table">
-			     <tr>
-                   <td>
-                         <label><b>Database</b></label>
-                   </td>
-                   <td>
-                         <input type="text" placeholder="Enter Database Name " name="database" required>
-                   </td>
-                </tr>
-  
-                   <tr>
-                   <td>
-                         <label><b>Table</b></label>
-                   </td>
-                   <td>
-                         <input type="text" placeholder="Enter Table Name " name="table" required>
-                   </td>
-                </tr>
-                
-           </table>
-             
-</form>
-  <br />
-
-	
-
-<form>
-<table class="table">
-                 <br />
-                    
-                <tr>   
-                 <td
-<p id='databases'>
-<b>Databases:</b>
-<br/><br/>
- <?php
-
-		 $sqlCommand1= "show databases";
-         $sqlUitvoer	= mysqli_query($conn,$sqlCommand1);
-		 while ($row = mysqli_fetch_array($sqlUitvoer)) {
-                                                         echo "<b>"."Db: ".$row['Database']."</b>". "\n"."<br>";
-                                                         }
-?>
-  </p>
-                 
-  </td>
-  </tr>
-                
-           </table>
-             
-
 
 </form>
  </div>
@@ -517,19 +448,14 @@ $conn = mysqli_connect($servername, $username, $password);
 </form>
  </div>
   
+  
 </div>
-   <div id="AdminText">
- </div>
 
- 
- 
- 
- 
- 
-<!-- ===================================================================================
-====================================READ DATABSE=========================================
-==================================================================================== -->
 
+
+
+
+   <div id="AdminText"></div>
 
   </body>
 </html>
